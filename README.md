@@ -1,5 +1,7 @@
 # İlişki Haritası
 
+<img src=".github/kapak.png" alt="İlişki Haritası: Ferrazzi yöntemiyle kişisel ilişki takibi; örnek veride kurgusal kişiler, öncelik sırasına göre 14, 30 ve 60 günde bir temas." width="100%">
+
 Keith Ferrazzi'nin *Never Eat Alone* kitabındaki "çınlama" yöntemini (tanıdıklarınla belirli aralıklarla temas kurma) Excel tablosundan web uygulamasına taşıyan kişisel ilişki takip sistemi.
 
 *A personal relationship tracker (single-user CRM) built on Ferrazzi's "pinging" method. Turkish UI.*
