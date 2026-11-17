@@ -1,0 +1,48 @@
+# ORTAM DEĞİŞKENLERİ — asla depoya gitmez
+.env
+.env.local
+.env*.local
+
+# bağımlılıklar
+node_modules/
+.pnp
+.pnp.js
+
+# derleme
+.next/
+out/
+build/
+dist/
+
+# yayın
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# günlükler
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# işletim sistemi
+.DS_Store
+Thumbs.db
+
+# yerel yedekler
+*.local.json
+yedek/
+
+.vercel
+.env*
+
+# öğrenme motoru beyin durumu: kişi kimlikleri ve kurum adları içerir
+beyin/durum/
+__pycache__/
+
+# Erişilebilirlik denetimi (oturum dosyası çerez içerir, asla commit'lenmez)
+erisim-rapor/
+erisim/denetim/node_modules/
+erisim/oturum*.json

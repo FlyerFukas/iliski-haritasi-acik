@@ -1,0 +1,316 @@
+{
+  "ayarlar": {
+    "frekans_gun": {
+      "1": 14,
+      "2": 30,
+      "3": 60
+    }
+  },
+  "kisiler": [
+    {
+      "ad": "Ayşe Yılmaz",
+      "halka": "DIŞ",
+      "kategori": "Kişisel",
+      "frekans": 1,
+      "rol": "Ürün Yöneticisi",
+      "sirket": "Örnek Teknoloji A.Ş.",
+      "sektor": "Teknoloji",
+      "sehir": "İstanbul",
+      "telefon": null,
+      "eposta": null,
+      "ozel_aralik_gun": null,
+      "kisisel_detay": "Koşu yapıyor",
+      "yapilacak_hamle": "Yeni projesi için tanıtım yap",
+      "profil_baglantisi": null,
+      "notlar": null
+    },
+    {
+      "ad": "Ali Demir",
+      "halka": "ORTA",
+      "kategori": "Önemli İş Arkadaşları",
+      "frekans": 2,
+      "rol": "Satış Müdürü",
+      "sirket": "Mavi Perakende",
+      "sektor": "Perakende",
+      "sehir": "Ankara",
+      "telefon": null,
+      "eposta": null,
+      "ozel_aralik_gun": null,
+      "kisisel_detay": "Fotoğrafçılıkla ilgileniyor",
+      "yapilacak_hamle": "Etkinliğe davet et",
+      "profil_baglantisi": null,
+      "notlar": null
+    },
+    {
+      "ad": "Zeynep Kaya",
+      "halka": "İÇ",
+      "kategori": "Kişisel",
+      "frekans": 3,
+      "rol": "Veri Analisti",
+      "sirket": "Kuzey Danışmanlık",
+      "sektor": "Danışmanlık",
+      "sehir": "İzmir",
+      "telefon": null,
+      "eposta": null,
+      "ozel_aralik_gun": null,
+      "kisisel_detay": null,
+      "yapilacak_hamle": null,
+      "profil_baglantisi": null,
+      "notlar": null
+    },
+    {
+      "ad": "Mehmet Çelik",
+      "halka": "DIŞ",
+      "kategori": "Önemli İş Arkadaşları",
+      "frekans": 1,
+      "rol": "Kurucu",
+      "sirket": "Atlas Lojistik",
+      "sektor": "Finans",
+      "sehir": null,
+      "telefon": null,
+      "eposta": null,
+      "ozel_aralik_gun": null,
+      "kisisel_detay": "Koşu yapıyor",
+      "yapilacak_hamle": "Yeni projesi için tanıtım yap",
+      "profil_baglantisi": null,
+      "notlar": null
+    },
+    {
+      "ad": "Elif Şahin",
+      "halka": "ORTA",
+      "kategori": "Kişisel",
+      "frekans": 2,
+      "rol": "Pazarlama Uzmanı",
+      "sirket": "Deniz Yazılım",
+      "sektor": "Eğitim",
+      "sehir": "İstanbul",
+      "telefon": null,
+      "eposta": null,
+      "ozel_aralik_gun": null,
+      "kisisel_detay": "Fotoğrafçılıkla ilgileniyor",
+      "yapilacak_hamle": "Etkinliğe davet et",
+      "profil_baglantisi": null,
+      "notlar": null
+    },
+    {
+      "ad": "Can Aydın",
+      "halka": "İÇ",
+      "kategori": "Önemli İş Arkadaşları",
+      "frekans": 3,
+      "rol": "Yazılım Geliştirici",
+      "sirket": "Bilge Akademi",
+      "sektor": "Lojistik",
+      "sehir": "Ankara",
+      "telefon": null,
+      "eposta": null,
+      "ozel_aralik_gun": null,
+      "kisisel_detay": null,
+      "yapilacak_hamle": null,
+      "profil_baglantisi": null,
+      "notlar": null
+    },
+    {
+      "ad": "Deniz Arslan",
+      "halka": "DIŞ",
+      "kategori": "Kişisel",
+      "frekans": 1,
+      "rol": "Ürün Yöneticisi",
+      "sirket": "Örnek Teknoloji A.Ş.",
+      "sektor": "Teknoloji",
+      "sehir": "İzmir",
+      "telefon": null,
+      "eposta": null,
+      "ozel_aralik_gun": null,
+      "kisisel_detay": "Koşu yapıyor",
+      "yapilacak_hamle": "Yeni projesi için tanıtım yap",
+      "profil_baglantisi": null,
+      "notlar": null
+    },
+    {
+      "ad": "Selin Koç",
+      "halka": "ORTA",
+      "kategori": "Önemli İş Arkadaşları",
+      "frekans": 2,
+      "rol": "Satış Müdürü",
+      "sirket": "Mavi Perakende",
+      "sektor": "Perakende",
+      "sehir": null,
+      "telefon": null,
+      "eposta": null,
+      "ozel_aralik_gun": null,
+      "kisisel_detay": "Fotoğrafçılıkla ilgileniyor",
+      "yapilacak_hamle": "Etkinliğe davet et",
+      "profil_baglantisi": null,
+      "notlar": null
+    },
+    {
+      "ad": "Burak Öztürk",
+      "halka": "İÇ",
+      "kategori": "Kişisel",
+      "frekans": 3,
+      "rol": "Veri Analisti",
+      "sirket": "Kuzey Danışmanlık",
+      "sektor": "Danışmanlık",
+      "sehir": "İstanbul",
+      "telefon": null,
+      "eposta": null,
+      "ozel_aralik_gun": null,
+      "kisisel_detay": null,
+      "yapilacak_hamle": null,
+      "profil_baglantisi": null,
+      "notlar": null
+    },
+    {
+      "ad": "Ece Kurt",
+      "halka": "DIŞ",
+      "kategori": "Önemli İş Arkadaşları",
+      "frekans": 1,
+      "rol": "Kurucu",
+      "sirket": "Atlas Lojistik",
+      "sektor": "Finans",
+      "sehir": "Ankara",
+      "telefon": null,
+      "eposta": null,
+      "ozel_aralik_gun": null,
+      "kisisel_detay": "Koşu yapıyor",
+      "yapilacak_hamle": "Yeni projesi için tanıtım yap",
+      "profil_baglantisi": null,
+      "notlar": null
+    },
+    {
+      "ad": "Emre Doğan",
+      "halka": "ORTA",
+      "kategori": "Kişisel",
+      "frekans": 2,
+      "rol": "Pazarlama Uzmanı",
+      "sirket": "Deniz Yazılım",
+      "sektor": "Eğitim",
+      "sehir": "İzmir",
+      "telefon": null,
+      "eposta": null,
+      "ozel_aralik_gun": null,
+      "kisisel_detay": "Fotoğrafçılıkla ilgileniyor",
+      "yapilacak_hamle": "Etkinliğe davet et",
+      "profil_baglantisi": null,
+      "notlar": null
+    },
+    {
+      "ad": "Merve Polat",
+      "halka": "İÇ",
+      "kategori": "Önemli İş Arkadaşları",
+      "frekans": 3,
+      "rol": "Yazılım Geliştirici",
+      "sirket": "Bilge Akademi",
+      "sektor": "Lojistik",
+      "sehir": null,
+      "telefon": null,
+      "eposta": null,
+      "ozel_aralik_gun": null,
+      "kisisel_detay": null,
+      "yapilacak_hamle": null,
+      "profil_baglantisi": null,
+      "notlar": null
+    }
+  ],
+  "temaslar": [
+    {
+      "tarih": "2026-06-10",
+      "kisi": "Ayşe Yılmaz",
+      "yontem": "Mesaj",
+      "ofis_disi_yuz_yuze": true,
+      "not": "Kahve içildi, yeni işi konuşuldu"
+    },
+    {
+      "tarih": "2026-07-11",
+      "kisi": "Ali Demir",
+      "yontem": "Telefon",
+      "ofis_disi_yuz_yuze": false,
+      "not": "Etkinlikte karşılaşıldı"
+    },
+    {
+      "tarih": "2026-08-12",
+      "kisi": "Zeynep Kaya",
+      "yontem": "Yüz yüze",
+      "ofis_disi_yuz_yuze": true,
+      "not": "Proje için fikir alışverişi"
+    },
+    {
+      "tarih": "2026-06-13",
+      "kisi": "Mehmet Çelik",
+      "yontem": "Mesaj",
+      "ofis_disi_yuz_yuze": false,
+      "not": "Kahve içildi, yeni işi konuşuldu"
+    },
+    {
+      "tarih": "2026-07-14",
+      "kisi": "Elif Şahin",
+      "yontem": "Telefon",
+      "ofis_disi_yuz_yuze": true,
+      "not": "Etkinlikte karşılaşıldı"
+    },
+    {
+      "tarih": "2026-08-15",
+      "kisi": "Can Aydın",
+      "yontem": "Yüz yüze",
+      "ofis_disi_yuz_yuze": false,
+      "not": "Proje için fikir alışverişi"
+    },
+    {
+      "tarih": "2026-06-16",
+      "kisi": "Deniz Arslan",
+      "yontem": "Mesaj",
+      "ofis_disi_yuz_yuze": true,
+      "not": "Kahve içildi, yeni işi konuşuldu"
+    },
+    {
+      "tarih": "2026-07-17",
+      "kisi": "Selin Koç",
+      "yontem": "Telefon",
+      "ofis_disi_yuz_yuze": false,
+      "not": "Etkinlikte karşılaşıldı"
+    },
+    {
+      "tarih": "2026-08-18",
+      "kisi": "Burak Öztürk",
+      "yontem": "Yüz yüze",
+      "ofis_disi_yuz_yuze": true,
+      "not": "Proje için fikir alışverişi"
+    },
+    {
+      "tarih": "2026-06-19",
+      "kisi": "Ece Kurt",
+      "yontem": "Mesaj",
+      "ofis_disi_yuz_yuze": false,
+      "not": "Kahve içildi, yeni işi konuşuldu"
+    },
+    {
+      "tarih": "2026-07-20",
+      "kisi": "Emre Doğan",
+      "yontem": "Telefon",
+      "ofis_disi_yuz_yuze": true,
+      "not": "Etkinlikte karşılaşıldı"
+    },
+    {
+      "tarih": "2026-08-21",
+      "kisi": "Merve Polat",
+      "yontem": "Yüz yüze",
+      "ofis_disi_yuz_yuze": false,
+      "not": "Proje için fikir alışverişi"
+    },
+    {
+      "tarih": "2026-06-22",
+      "kisi": "Ayşe Yılmaz",
+      "yontem": "Mesaj",
+      "ofis_disi_yuz_yuze": true,
+      "not": "Kahve içildi, yeni işi konuşuldu"
+    },
+    {
+      "tarih": "2026-07-23",
+      "kisi": "Ali Demir",
+      "yontem": "Telefon",
+      "ofis_disi_yuz_yuze": false,
+      "not": "Etkinlikte karşılaşıldı"
+    }
+  ],
+  "hedefler": []
+}

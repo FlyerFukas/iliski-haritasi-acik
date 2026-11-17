@@ -1,0 +1,41 @@
+{
+  "name": "iliski-haritasi-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "node --env-file-if-exists=.env.local scripts/seed.ts",
+    "seed:kontrol": "node --env-file-if-exists=.env.local scripts/seed.ts --kontrol",
+    "yedek": "node --env-file-if-exists=.env.local scripts/yedek-al.ts",
+    "dogrula": "node scripts/dogrula-excel.ts",
+    "dogrula:yedek": "node --env-file-if-exists=.env.local scripts/dogrula-yedek.ts",
+    "dogrula:turatma": "node --env-file-if-exists=.env.local scripts/dogrula-turatma.ts",
+    "simge": "node scripts/simge-uret.ts",
+    "test:temizle": "node --env-file-if-exists=.env.local scripts/test-temizle.ts",
+    "excel:fark": "node --env-file-if-exists=.env.local scripts/excel-fark.ts",
+    "excel:senkron": "node --env-file-if-exists=.env.local scripts/excel-senkron.ts",
+    "erisim:kur": "npm install --prefix erisim/denetim --no-audit --no-fund",
+    "erisim": "node erisim/denetim/denetle.mjs",
+    "erisim:statik": "node erisim/denetim/statik.mjs ."
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "unpdf": "^1.4.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^15.1.0",
+    "typescript": "^5.7.0"
+  }
+}

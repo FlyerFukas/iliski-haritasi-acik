@@ -1,0 +1,554 @@
+/* İlişki Haritası — temel stil sistemi
+   Mobil öncelikli. Tüm ekranlar buradaki sınıfları kullanır. */
+
+:root {
+  --zemin: #f6f7f9;
+  --yuzey: #ffffff;
+  --yuzey-2: #f0f2f5;
+  --kenar: #dfe3e8;
+  --metin: #16191d;
+  --metin-soluk: #656d76;
+  --vurgu: #1f6feb;
+  --vurgu-zemin: #e7f0fe;
+
+  /* durum renkleri — SPEC §4 */
+  --gecikti: #c9282d;
+  --gecikti-zemin: #fdecec;
+  --yaklasiyor: #9a6700;
+  --yaklasiyor-zemin: #fff6dd;
+  --guncel: #1a7f45;
+  --guncel-zemin: #e6f6ec;
+  --kayit-yok: #a34d00;
+  --kayit-yok-zemin: #fdf0e3;
+
+  --r: 10px;
+  --golge: 0 1px 2px rgba(16, 22, 26, 0.06), 0 1px 3px rgba(16, 22, 26, 0.08);
+
+  /* iOS'ta çentik/ana ekran çubuğu payı */
+  --alt-guvenli: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --zemin: #0f1216;
+    --yuzey: #171b21;
+    --yuzey-2: #1f242b;
+    --kenar: #2c333c;
+    --metin: #e7eaee;
+    --metin-soluk: #9aa4b0;
+    --vurgu: #58a6ff;
+    --vurgu-zemin: #16283f;
+
+    --gecikti: #ff7b72;
+    --gecikti-zemin: #3a1d1d;
+    --yaklasiyor: #e3b341;
+    --yaklasiyor-zemin: #392c12;
+    --guncel: #56d364;
+    --guncel-zemin: #14301d;
+    --kayit-yok: #ffa657;
+    --kayit-yok-zemin: #3a2513;
+
+    --golge: 0 1px 2px rgba(0, 0, 0, 0.4);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--zemin);
+  color: var(--metin);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.25;
+  font-weight: 650;
+}
+h1 {
+  font-size: 1.4rem;
+}
+h2 {
+  font-size: 1.1rem;
+}
+h3 {
+  font-size: 0.95rem;
+}
+
+a {
+  color: var(--vurgu);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- düzen ---------- */
+
+.kabuk {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 16px calc(88px + var(--alt-guvenli));
+}
+
+.yigin {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.satir {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.aralik {
+  flex: 1;
+}
+
+.izgara {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 700px) {
+  .izgara-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ---------- kart ---------- */
+
+.kart {
+  background: var(--yuzey);
+  border: 1px solid var(--kenar);
+  border-radius: var(--r);
+  box-shadow: var(--golge);
+  padding: 14px;
+}
+.kart-baslik {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.soluk {
+  color: var(--metin-soluk);
+  font-size: 0.85rem;
+}
+
+/* ---------- durum rozetleri ---------- */
+
+.rozet {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 650;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+.rozet-GECIKTI {
+  color: var(--gecikti);
+  background: var(--gecikti-zemin);
+  border-color: var(--gecikti);
+}
+.rozet-YAKLASIYOR {
+  color: var(--yaklasiyor);
+  background: var(--yaklasiyor-zemin);
+  border-color: var(--yaklasiyor);
+}
+.rozet-GUNCEL {
+  color: var(--guncel);
+  background: var(--guncel-zemin);
+  border-color: var(--guncel);
+}
+.rozet-KAYIT_YOK {
+  color: var(--kayit-yok);
+  background: var(--kayit-yok-zemin);
+  border-color: var(--kayit-yok);
+}
+.rozet-notr {
+  color: var(--metin-soluk);
+  background: var(--yuzey-2);
+  border-color: var(--kenar);
+}
+
+/* ---------- sayaç kutusu ---------- */
+
+.sayac {
+  display: block;
+  padding: 14px;
+  border-radius: var(--r);
+  border: 1px solid var(--kenar);
+  background: var(--yuzey);
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--golge);
+}
+.sayac:hover {
+  text-decoration: none;
+  border-color: var(--metin-soluk);
+}
+.sayac-rakam {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.sayac-etiket {
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--metin-soluk);
+}
+.sayac-GECIKTI .sayac-rakam {
+  color: var(--gecikti);
+}
+.sayac-YAKLASIYOR .sayac-rakam {
+  color: var(--yaklasiyor);
+}
+.sayac-GUNCEL .sayac-rakam {
+  color: var(--guncel);
+}
+.sayac-KAYIT_YOK .sayac-rakam {
+  color: var(--kayit-yok);
+}
+
+/* ---------- form ---------- */
+
+.alan {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.etiket {
+  font-size: 0.8rem;
+  font-weight: 650;
+  color: var(--metin-soluk);
+}
+
+input[type='text'],
+input[type='date'],
+input[type='search'],
+input[type='tel'],
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='url'],
+select,
+textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--kenar);
+  border-radius: var(--r);
+  background: var(--yuzey);
+  color: var(--metin);
+  /* 16px altına düşme: iOS otomatik yakınlaştırmasını engeller */
+  font-size: 16px;
+  font-family: inherit;
+}
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--vurgu);
+  outline-offset: 1px;
+}
+textarea {
+  min-height: 84px;
+  resize: vertical;
+}
+
+/* ---------- butonlar ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  /* dokunma hedefi en az 44px — tek elle mobil kullanım */
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid var(--kenar);
+  border-radius: var(--r);
+  background: var(--yuzey);
+  color: var(--metin);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover {
+  background: var(--yuzey-2);
+  text-decoration: none;
+}
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.btn-birincil {
+  background: var(--vurgu);
+  border-color: var(--vurgu);
+  color: #fff;
+}
+.btn-birincil:hover {
+  background: var(--vurgu);
+  filter: brightness(1.08);
+}
+.btn-genis {
+  width: 100%;
+}
+.btn-kucuk {
+  min-height: 34px;
+  padding: 5px 10px;
+  font-size: 0.82rem;
+}
+
+/* Seçili durum — hem filtre çipleri hem yöntem butonları için.
+   aria-pressed erişilebilirlik için zaten gerekli; stili de ona bağlıyoruz ki
+   ikisi asla ayrışmasın. */
+.btn[aria-pressed='true'] {
+  background: var(--vurgu-zemin);
+  border-color: var(--vurgu);
+  color: var(--vurgu);
+  font-weight: 700;
+}
+.btn[aria-pressed='true']:hover {
+  background: var(--vurgu-zemin);
+}
+
+/* seçilebilir büyük seçenek butonları (yöntem seçimi) */
+.secenek {
+  flex: 1 1 30%;
+  min-height: 56px;
+  font-size: 0.95rem;
+}
+
+/* ---------- tablo ---------- */
+
+.tablo-sarmal {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+th,
+td {
+  text-align: right;
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--kenar);
+  white-space: nowrap;
+}
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+th {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--metin-soluk);
+  font-weight: 650;
+}
+tbody tr:hover {
+  background: var(--yuzey-2);
+}
+
+/* ---------- alt gezinme (mobil) ---------- */
+
+.gezinme {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  display: flex;
+  background: var(--yuzey);
+  border-top: 1px solid var(--kenar);
+  padding-bottom: var(--alt-guvenli);
+}
+.gezinme a {
+  flex: 1;
+  padding: 9px 2px;
+  text-align: center;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--metin-soluk);
+  text-decoration: none;
+  line-height: 1.3;
+}
+.gezinme a:hover {
+  text-decoration: none;
+}
+.gezinme a[aria-current='page'] {
+  color: var(--vurgu);
+  background: var(--vurgu-zemin);
+}
+.gezinme-simge {
+  display: block;
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+/* ---------- duyarlı görünüm anahtarı ----------
+   Kişi listesi geniş ekranda tablo, dar ekranda kart olur (SPEC §5.2). */
+
+.sadece-genis {
+  display: none;
+}
+@media (min-width: 760px) {
+  .sadece-genis {
+    display: block;
+  }
+  .sadece-dar {
+    display: none;
+  }
+}
+
+/* ---------- yatay kaydırmalı kişi kartı ----------
+   Mobilde ekrana sığmayan detaylar için: kart sağa kaydırılınca kişisel detay,
+   yapılacak hamle ve notlar sırayla gelir. Kişiye girmeden okunabilsin diye. */
+
+.kaydir {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 0;
+  /* mobilde parmakla kaydırma akıcı olsun */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.kaydir::-webkit-scrollbar {
+  height: 4px;
+}
+.kaydir::-webkit-scrollbar-thumb {
+  background: var(--kenar);
+  border-radius: 2px;
+}
+
+.kaydir-panel {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  min-width: 0;
+  padding-right: 12px;
+}
+.kaydir-panel + .kaydir-panel {
+  border-left: 1px solid var(--kenar);
+  padding-left: 12px;
+}
+
+/* kaç panel olduğunu gösteren noktalar */
+.kaydir-ipucu {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  font-size: 0.7rem;
+  color: var(--metin-soluk);
+}
+.kaydir-nokta {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--kenar);
+}
+
+@media (min-width: 760px) {
+  /* geniş ekranda kaydırmaya gerek yok, hepsi yan yana sığar */
+  .kaydir {
+    overflow-x: visible;
+    scroll-snap-type: none;
+  }
+  .kaydir-panel {
+    flex: 1 1 0;
+  }
+  .kaydir-ipucu {
+    display: none;
+  }
+}
+
+/* ---------- her zaman görünen ekleme düğmesi ---------- */
+
+.ekle-dugmesi {
+  position: sticky;
+  top: 8px;
+  z-index: 20;
+}
+
+/* ---------- zaman çizelgesi ---------- */
+
+.cizelge {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cizelge li {
+  position: relative;
+  padding: 0 0 16px 20px;
+  border-left: 2px solid var(--kenar);
+}
+.cizelge li:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+.cizelge li::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--vurgu);
+}
+.cizelge .iptal-edilmis {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+/* ---------- yardımcılar ---------- */
+
+.gizli {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.bos-durum {
+  padding: 28px 14px;
+  text-align: center;
+  color: var(--metin-soluk);
+}
+.hata {
+  padding: 10px 12px;
+  border-radius: var(--r);
+  background: var(--gecikti-zemin);
+  border: 1px solid var(--gecikti);
+  color: var(--gecikti);
+  font-size: 0.88rem;
+}
