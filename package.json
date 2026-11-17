@@ -18,9 +18,6 @@
     "test:temizle": "node --env-file-if-exists=.env.local scripts/test-temizle.ts",
     "excel:fark": "node --env-file-if-exists=.env.local scripts/excel-fark.ts",
     "excel:senkron": "node --env-file-if-exists=.env.local scripts/excel-senkron.ts",
-    "erisim:kur": "npm install --prefix erisim/denetim --no-audit --no-fund",
-    "erisim": "node erisim/denetim/denetle.mjs",
-    "erisim:statik": "node erisim/denetim/statik.mjs ."
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",

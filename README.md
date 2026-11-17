@@ -38,7 +38,6 @@ Ayrıntılı kurulum `BASLA.md`, yayına alma `YAYINLA.md`, tasarım şartnamesi
 
 - `data/seed.json` tamamen kurgusal kişilerden oluşur. Gerçek kullanımın verisi bu depoda yoktur.
 - Ağ sayfasındaki "öğrenilmiş bağ" önerileri ayrı, kapalı kaynak bir öğrenme motorundan gelir. Motor bu depoda yer almaz; o bölüm boş görünür, uygulamanın geri kalanı çalışır.
-- `erisim/` klasörü arayüzün bilişsel yük ve bilgi kokusu denetim kitidir ([Erişilebilirlik](https://github.com/FlyerFukas/erisilebilirlik)).
 
 ## Lisans
 
